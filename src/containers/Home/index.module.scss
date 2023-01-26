@@ -1,0 +1,61 @@
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #aaa;
+  .button {
+    padding: 0.3rem;
+    background: #dcdcdc;
+    border: 1px solid #a5a5a5;
+    color: #555;
+    cursor: pointer;
+    &:focus,
+    &:hover {
+      background: #ededed;
+    }
+    &.active {
+      color: #000;
+      border: 1px solid #7b7b7b;
+      background: #cbcbcb;
+      // font-weight: bold;
+    }
+  }
+  .margin-right {
+    margin-right: 1rem;
+  }
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .search {
+    &__container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      input {
+        padding: 5px 10px;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .users {
+    &__container {
+      display: flex;
+
+      div:not(:first-child) {
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .transactions__list {
+    &__container {
+      margin-top: 1rem;
+    }
+  }
+}

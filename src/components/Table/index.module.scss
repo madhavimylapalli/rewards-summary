@@ -1,0 +1,25 @@
+.table__wrapper {
+  border-collapse: collapse;
+
+  td,
+  th {
+    border: 1px solid #eee;
+    padding: 8px;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eee;
+  }
+
+  .table__title {
+    text-align: center;
+  }
+  .no__data {
+    text-align: center;
+    color: #aaa;
+  }
+}
